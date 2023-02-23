@@ -75,6 +75,8 @@ namespace LaneGraphsMatrix
         {
             for (int i = 0; i < _points.Length; i++)
             {
+                // help from https://learn.microsoft.com/en-us/dotnet/api/system.windows.shapes.ellipse?view=windowsdesktop-7.0
+                // and https://www.codeproject.com/Questions/628882/draw-a-circle-at-location-x-y-centered
                 var dot = new Ellipse();
                 dot.Stroke = Brushes.Black;
                 dot.Fill = Brushes.Blue;
@@ -90,6 +92,7 @@ namespace LaneGraphsMatrix
 
         public void DrawLine(PointF start, PointF end, Brush brush)
         {
+            // help from https://learn.microsoft.com/en-us/dotnet/api/system.windows.shapes.line?view=windowsdesktop-7.0
             Line line = new Line();
             line.Stroke = brush;
             line.X1 = start.X;
@@ -137,35 +140,6 @@ namespace LaneGraphsMatrix
             float xDiff = end.X - start.X;
             float yDiff = end.Y - start.Y;
             return MathF.Atan2(yDiff, xDiff);
-
-            /*
-            //forumla adapted from https://www.cuemath.com/direction-of-a-vector-formula/
-
-            float X = (end.X - start.X);
-            float Y = (end.Y - start.Y);
-            float alpha = MathF.Atan(Y / X);
-
-            if (X >= 0 && Y <= 0)
-            {
-                //quadrant 1
-                return alpha;
-            }
-            else if (X < 0 && Y <= 0)
-            {
-                //quadrant 2
-                return MathF.PI - alpha;
-            }
-            else if (X < 0 && Y > 0)
-            {
-                //quadrant 3
-                return MathF.PI + alpha;
-            }
-            else
-            {
-                //quadrant 4
-                return MathF.Tau - alpha;
-            }
-            */
         }
     }
 }
