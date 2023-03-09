@@ -68,6 +68,9 @@ namespace LanePermutations
 
 
         /*
+         * this code is left here to document some of my struggles in writing the permutations algorithm
+         * it took a while but i figured it out. all by my lonesome
+         * 
         public static List<List<T>> FindAllPermutations<T>(List<T> values, int r)
         {
             List<List<T>> results = new List<List<T>>();
@@ -158,16 +161,7 @@ namespace LanePermutations
 
             for (int j = 0; j < possibleSymbolsRemaining; j++) 
             {
-                /*if (j == 0)
                 {
-                    // just leave it there, that can be the default one
-                    results.Add(input);
-                }
-                else
-                */
-                {
-
-
                     List<T> current = new List<T>(input); // copy input
                     // should be left alone for the first one when j == 0
                     Swapper.SwapValuesAtIndices(current, currentWorkingIndex, currentWorkingIndex + j);
