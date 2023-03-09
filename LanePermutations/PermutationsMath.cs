@@ -38,6 +38,34 @@ namespace LanePermutations
             return Factorial(n) / Factorial(n - r);
         }
 
+        public static int FindOrderedPartitionsCount(int n, List<int> rs)
+        {
+            if (n < 1)
+            {
+                throw new Exception("Error: invalid n for ordered partitions");
+            }
+            // formula: n! / ( r1!*r2!....*rk!) 
+
+            int multipliedRFactorials = 1;
+            foreach (int r in rs)
+            {
+                multipliedRFactorials *= Factorial(r);
+            }
+
+            return Factorial(n) / (multipliedRFactorials);
+        }
+
+        public static int FindCombinationsCount(int n, int r)
+        {
+            if (n < 1 || r < 1 || r > n)
+            {
+                throw new Exception("Error: invalid n or r for combinations");
+            }
+            // formula: nPr / r!
+            return FindPermutationsCount(n,r) / Factorial(r);
+        }
+
+
 
         /*
         public static List<List<T>> FindAllPermutations<T>(List<T> values, int r)
@@ -150,12 +178,66 @@ namespace LanePermutations
             return results;
         }
 
-        public static List<List<T>> CreateAllCombinations<T>(List<T> input, int r)
+        public static List<List<T>> CreateAllOrderedPartitions<T>(List<T> input, int r)
         {
+            // actually just creates all the permutations and removes duplicates 
             int n = input.Count;
+            List<List<T>> permutations = CreateAllPermutations(input, r);
+
             List<List<T>> results = new List<List<T>>();
 
+            foreach (List<T> p in permutations)
+            {
+                bool isNew = true;
 
+                foreach (List<T> x in results)
+                {
+                    // learned about sequence equal from
+                    //https://stackoverflow.com/questions/22173762/check-if-two-lists-are-equal
+                    if (p.SequenceEqual(x))
+                    {
+                        isNew = false;
+                    }
+                }
+
+                if (isNew)
+                {
+                    results.Add(p);
+                }
+            }
+
+            return results;
+        }
+
+
+        public static List<List<T>> CreateAllCombinations<T>(List<T> input, int r)
+        {
+            // actually just creates all the permutations and removes duplicates 
+            int n = input.Count;
+            List<List<T>> permutations = CreateAllPermutations(input, r);
+
+            List<List<T>> results = new List<List<T>>();
+
+            foreach (List<T> p in permutations)
+            {
+                bool isNew = true;
+
+                foreach (List<T> x in results)
+                {
+                    // learned about this linq
+                    // checks if they contain the same elements, regardless of order
+                    //https://stackoverflow.com/questions/22173762/check-if-two-lists-are-equal
+                    if (p.All(x.Contains))
+                    {
+                        isNew = false;
+                    }
+                }
+
+                if (isNew)
+                {
+                    results.Add(p);
+                }
+            }
 
             return results;
         }
