@@ -12,19 +12,19 @@ namespace LaneFiniteStateMachine
         {
             Dialogue = "The machine is locked";
         }
-        public override FSMOutput AddQuarter()
+        public override TransactionResult AddQuarter()
         {
-            return new FSMOutput(new QuarterInState(), VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(new QuarterInState(), VendingMachine.OutputItems.Nothing);
         }
 
-        public override FSMOutput Cancel()
+        public override TransactionResult Cancel()
         {
-            return new FSMOutput(this, VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(this, VendingMachine.OutputItems.Nothing);
         }
 
-        public override FSMOutput Purchase()
+        public override TransactionResult Purchase()
         {
-            return new FSMOutput(this, VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(this, VendingMachine.OutputItems.Nothing);
         }
     }
 }

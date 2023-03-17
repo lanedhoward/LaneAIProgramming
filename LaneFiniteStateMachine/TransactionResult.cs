@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LaneFiniteStateMachine
 {
-    public class FSMOutput
+    public class TransactionResult
     {
         public VendingMachineState newState;
         public VendingMachine.OutputItems outputItem;
 
-        public FSMOutput(VendingMachineState _newState, VendingMachine.OutputItems _outputItem)
+        public TransactionResult(VendingMachineState _newState, VendingMachine.OutputItems _outputItem)
         {
             newState = _newState;
             outputItem = _outputItem;

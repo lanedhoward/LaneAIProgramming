@@ -12,19 +12,19 @@ namespace LaneFiniteStateMachine
         {
             Dialogue = "The machine has 2 quarters in.";
         }
-        public override FSMOutput AddQuarter()
+        public override TransactionResult AddQuarter()
         {
-            return new FSMOutput(new ThreeQuartersInState(), VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(new ThreeQuartersInState(), VendingMachine.OutputItems.Nothing);
         }
 
-        public override FSMOutput Cancel()
+        public override TransactionResult Cancel()
         {
-            return new FSMOutput(new LockedState(), VendingMachine.OutputItems.TwoQuarters);
+            return new TransactionResult(new LockedState(), VendingMachine.OutputItems.TwoQuarters);
         }
 
-        public override FSMOutput Purchase()
+        public override TransactionResult Purchase()
         {
-            return new FSMOutput(new LockedState(), VendingMachine.OutputItems.Gum);
+            return new TransactionResult(new LockedState(), VendingMachine.OutputItems.Gum);
         }
     }
 }

@@ -22,19 +22,19 @@ namespace LaneFiniteStateMachine
             return Dialogue;
         }
 
-        public virtual FSMOutput AddQuarter()
+        public virtual TransactionResult AddQuarter()
         {
-            return new FSMOutput(this, VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(this, VendingMachine.OutputItems.Nothing);
         }
 
-        public virtual FSMOutput Cancel()
+        public virtual TransactionResult Cancel()
         {
-            return new FSMOutput(this, VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(this, VendingMachine.OutputItems.Nothing);
         }
 
-        public virtual FSMOutput Purchase()
+        public virtual TransactionResult Purchase()
         {
-            return new FSMOutput(this, VendingMachine.OutputItems.Nothing);
+            return new TransactionResult(this, VendingMachine.OutputItems.Nothing);
         }
     }
 }

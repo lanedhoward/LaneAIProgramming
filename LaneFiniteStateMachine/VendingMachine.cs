@@ -57,7 +57,7 @@ GRANOLA: 75 CENTS
 
             Print(currentState.SayDialogue());
 
-            FSMOutput output;
+            TransactionResult output;
 
             Print("Please input what you would like to do. 1: Add quarter. 2: Cancel. 3: Purchase");
             int input = GetInputIntKey(1, 3);
