@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanePermutations", "LanePer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneLibrary", "LaneLibrary\LaneLibrary.csproj", "{C1761CE0-A73E-4FFC-8D8E-F27C49DB1CCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaneFiniteStateMachine", "LaneFiniteStateMachine\LaneFiniteStateMachine.csproj", "{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneFiniteStateMachine", "LaneFiniteStateMachine\LaneFiniteStateMachine.csproj", "{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
