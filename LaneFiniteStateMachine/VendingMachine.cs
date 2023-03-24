@@ -64,16 +64,16 @@ GRANOLA: 75 CENTS
             switch(input)
             {
                 case 1:
-                    Print("Adding quarter...");
+                    Print("You chose to add a quarter.");
                     output = currentState.AddQuarter();
                     break;
                 default:
                 case 2:
-                    Print("Canceling...");
+                    Print("You chose to press the cancel button.");
                     output = currentState.Cancel();
                     break;
                 case 3:
-                    Print("Purchasing...");
+                    Print("You chose to press the purchase button.");
                     output = currentState.Purchase();
                     break;
             }
