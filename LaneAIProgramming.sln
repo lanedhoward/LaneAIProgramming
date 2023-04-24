@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneLibrary", "LaneLibrary\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneFiniteStateMachine", "LaneFiniteStateMachine\LaneFiniteStateMachine.csproj", "{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaneANN", "LaneANN\LaneANN.csproj", "{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
