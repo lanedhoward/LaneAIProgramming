@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneLibrary", "LaneLibrary\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneFiniteStateMachine", "LaneFiniteStateMachine\LaneFiniteStateMachine.csproj", "{9D47F88C-73B5-4F5E-B236-29E062D8D6E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaneANN", "LaneANN\LaneANN.csproj", "{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaneANN", "LaneANN\LaneANN.csproj", "{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8DDB87F8-0C83-4D14-B861-48AB573D35B9}"
+	ProjectSection(SolutionItems) = preProject
+		Ethics.txt = Ethics.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

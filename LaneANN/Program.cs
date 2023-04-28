@@ -1,5 +1,9 @@
 ﻿namespace LaneANN
 {
+    /// <summary>
+    /// Code adapted from https://medium.com/p/7e917e9fc2cc
+    /// </summary>
+
     class Program
     {
 
