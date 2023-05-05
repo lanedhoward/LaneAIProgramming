@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LaneANN
 {
-    class NeuralNetWork
+    public class NeuralNetWork
     {
-        private Random _randomObj;
+        public Random _randomObj;
 
         public NeuralNetWork(int synapseMatrixColumns, int synapseMatrixLines)
         {
@@ -239,5 +239,7 @@ namespace LaneANN
             }
             return result;
         }
+
+
     }
 }

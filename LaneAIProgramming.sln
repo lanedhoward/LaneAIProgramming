@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Ethics.txt = Ethics.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaneFinal", "LaneFinal\LaneFinal.csproj", "{E7CB97B0-D4D5-476D-82AB-E56A6BAA33E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A362B01-B1C6-4BC7-B6AD-E544FD63D390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CB97B0-D4D5-476D-82AB-E56A6BAA33E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CB97B0-D4D5-476D-82AB-E56A6BAA33E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CB97B0-D4D5-476D-82AB-E56A6BAA33E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CB97B0-D4D5-476D-82AB-E56A6BAA33E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
